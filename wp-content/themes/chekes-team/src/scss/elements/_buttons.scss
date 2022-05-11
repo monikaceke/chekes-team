@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+input[type='submit'],
+.btn {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	border: 2px solid transparent;
+	background-color: $outer-space;
+	padding: 16px 10px;
+	font-weight: 600;
+	outline: none;
+	min-width: 167px;
+	max-width: 167px;
+	transition: $dur $ease;
+	font-family: $font-main;
+	font-size: 16px;
+	line-height: 1.3;
+	color: $white;
+	box-shadow: 0 5px 10px rgba(155, 212, 202, 0.502);
+	border-radius: 32px;
+	
+	@include hover {
+		background-color: $carnation;
+		color: $outer-space;
+		transform: translate3d(0, 0, 0);
+		perspective: 1000px;
+		animation-name: shake;
+		animation-duration: 0.8s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		transform-origin: 50% 100%;
+	}
+
+	&.btn--white-hover {
+		@include hover {
+			background-color: $white;
+			color: $outer-space;
+		}
+	}
+
+	@include mq($xl) {
+		padding: 13px 10px;
+	}
+
+	@include mq($lg) {
+		font-size: 14px;
+	}
+}
+
+.btn--big {
+	min-width: 202px;
+	max-width: 202px;
+}
+
+.btn--white {
+	background-color: $white;
+	color: $carnation;
+
+	@include hover {
+		color: $white;
+	}
+}
+
+.btn--sm {
+	min-width: 164px;
+	max-width: 164px;
+}

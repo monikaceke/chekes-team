@@ -1,0 +1,258 @@
+/*--------------------------------------------------------------
+## Helpers
+--------------------------------------------------------------*/
+.clear,
+.entry-content,
+.comment-content,
+.site-content,
+.site-footer {
+	@include clearfix;
+}
+
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.centered {
+	text-align: center;
+}
+
+.is-disabled {
+	pointer-events: none;
+	opacity: .7;
+}
+
+// Theming and colors/fonts iterator
+@each $colors-name in $site-colors {
+	$name: nth($colors-name, 1);
+	$color: nth($colors-name, 2);
+	.bg-#{$name} {
+		background-color: $color;
+	}
+	.color-#{$name} {
+		color: $color;
+	}
+}
+
+@each $font-name in $site-fonts {
+	$name: nth($font-name, 1);
+	$font: nth($font-name, 2);
+	.font-#{$name} {
+		font-family: $font;
+	}
+}
+
+// Text meant only for screen readers.
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+
+	&:focus {
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		display: block;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex='-1']:focus {
+	outline: 0;
+}
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Container
+--------------------------------------------------------------*/
+.container--big {
+	max-width: 1880px !important;
+	margin: 0 auto;
+}
+
+.container--middle {
+	max-width: 1500px !important;
+}
+
+.prevent-scroll {
+	overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Internet explorer
+--------------------------------------------------------------*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {}
+
+.decor-paw {
+    position: absolute !important;
+    right: -100px;
+    top: 0;
+    z-index: 2;
+
+    @include mq($lap-large) {
+        right: 15px;
+    }
+
+    @include mq($lg) {
+        width: 100px;
+        height: 100px;
+    }
+
+    @include mq($md) {
+        width: 80px;
+        height: 80px;
+    }
+
+    @include mq(400px) {
+        width: 50px;
+        height: 50px;
+    }
+
+    &--bottom {
+        top: auto;
+        bottom: 7px;
+        left: 16px;
+        right: auto;
+        z-index: 0;
+        display: block;
+    }
+}
+
+
+// decor images
+.big-circle__img {
+	position: absolute;
+	right: -50%;
+	top: 50%;
+	transform: translateY(-50%);
+
+	@include mq($lap-large) {
+		width: 1000px;
+		right: -500px;
+	}
+	
+	@include mq($xl) {
+		width: 800px;
+		right: -400px;
+	}
+
+	@include mq($lg) {
+		width: 400px;
+		right: -200px;
+	}
+}
+
+.circle-sm-img {
+    position: absolute;
+    left: -200px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+
+	@include mq($lap-large) {
+		width: 300px;
+    	height: 300px;
+		left: -150px;
+	}
+	
+	@include mq($xl) {
+		width: 200px;
+    	height: 200px;
+		left: -100px;
+	}
+
+	@include mq($lg) {
+		width: 150px;
+    	height: 150px;
+		left: -75px;
+	}
+
+	&--in-left {
+		left: -40%;
+
+		@include mq($lap-large) {
+			left: -150px;
+		}
+		
+		@include mq($xl) {
+			left: -100px;
+		}
+	
+		@include mq($lg) {
+			left: -75px;
+		}
+	}
+
+	&--in-right {
+		left: auto;
+		right: -40%;
+
+		@include mq($lap-large) {
+			right: -150px;
+		}
+		
+		@include mq($xl) {
+			right: -100px;
+		}
+	
+		@include mq($lg) {
+			right: -75px;
+		}
+	}
+}
+
+.gsap-entry-content,
+.gasp-top,
+.gasp-bottom,
+.gasp-left,
+.gasp-right {
+	opacity: 0;
+	transition: $dur $ease;
+
+	@include mq(767px) {
+		opacity: 1;
+	}
+}
+
+svg {
+	height: 100%;
+}

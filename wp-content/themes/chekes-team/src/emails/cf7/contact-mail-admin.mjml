@@ -1,0 +1,75 @@
+<mjml>
+  <mj-body>
+    <mj-section background-color="#e9f5f3" background-repeat="repeat" padding-bottom="0px" padding-top="30px" padding="20px 0">
+      <mj-column>
+        <mj-image align="center" padding="10px 25px 0" src="https://clementelcommunications.com/wp-content/themes/fws-clementel/src/assets/images/logo.png" target="_blank" width="220px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-repeat="repeat" padding-bottom="0px" padding-top="0px" padding="20px 0" text-align="center">
+    </mj-section>
+    <mj-wrapper background-color="#e9f5f3" padding-left="30px" padding-right="30px" padding-top="40px">
+			<mj-section border="2px solid #9BD4CA" border-bottom="1px solid #e9f5f3">
+				<mj-column>
+					<mj-text font-size="15px" font-family="OpenSans, Arial, sans-serif" color="#2A3433" padding="8px" >Name:</mj-text>
+				</mj-column>
+				<mj-column>
+					<mj-text font-size="15px" font-family="OpenSans, Arial, sans-serif" color="#2A3433" font-weight="bold" padding="8px">[your-name] [your-last-name]</mj-text>
+				</mj-column>
+			</mj-section>
+      <mj-section border="2px solid #9BD4CA" border-bottom="1px solid #e9f5f3">
+				<mj-column>
+					<mj-text font-size="15px" font-family="OpenSans, Arial, sans-serif" color="#2A3433" padding="8px" >Email:</mj-text>
+				</mj-column>
+				<mj-column>
+					<mj-text font-size="15px" font-family="OpenSans, Arial, sans-serif" color="#2A3433" font-weight="bold" padding="8px">[your-email]</mj-text>
+				</mj-column>
+			</mj-section>      
+      <mj-section border="2px solid #9BD4CA" border-bottom="1px solid #e9f5f3">
+				<mj-column>
+					<mj-text font-size="15px" font-family="OpenSans, Arial, sans-serif" color="#2A3433" padding="8px" >Phone:</mj-text>
+				</mj-column>
+				<mj-column>
+					<mj-text font-size="15px" font-family="OpenSans, Arial, sans-serif" color="#2A3433" font-weight="bold" padding="8px">[your-phone]</mj-text>
+				</mj-column>
+			</mj-section>
+      <mj-section border="2px solid #9BD4CA">
+				<mj-column>
+					<mj-text font-size="15px" font-family="OpenSans, Arial, sans-serif" color="#2A3433" padding="8px" >Message:</mj-text>
+				</mj-column>
+				<mj-column>
+					<mj-text font-size="15px" font-family="OpenSans, Arial, sans-serif" color="#2A3433" font-weight="bold" padding="8px">[message]</mj-text>
+				</mj-column>
+			</mj-section>      
+		</mj-wrapper>
+    <mj-section background-color="#e9f5f3">
+				<mj-column>
+					<mj-text align="center" font-size="18px" font-family="OpenSans, Arial, sans-serif" color="#19140e">This email was sent from a Contact page on the ClemenTel website (<a href="https://clementelcommunications.com" style="font-size:18px; font-family:OpenSans, Arial, sans-serif; font-weight:bold; color:#F15D5A;">https://clementelcommunications.com</a>)</mj-text>
+				</mj-column>
+			</mj-section>
+    <mj-section background-color="#e9f5f3" background-repeat="repeat" padding="20px 0">
+      <mj-column>
+        <mj-image width="150px" align="center" padding="10px 25px" src="https://clementelcommunications.com/wp-content/themes/fws-clementel/src/assets/images/logo.png" target="_blank" width="202px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#e9f5f3" background-repeat="repeat" padding="0px">
+      <mj-column width="100%">
+        <mj-text align="center" color="#fff" font-size="16px" font-family="OpenSans, Arial, sans-serif" padding-left="0px" padding-right="0" padding-bottom="28px" padding-top="20px">
+          <a href="tel:7182869000" style="font-size:16px; display:block; color:#242828;">Phone: 718-286-9000</a>
+          <a href="mailto:info@clementelcommunications.com" style="font-size:16px; display:block; padding-top:10px; color:#242828;">Email: info@clementelcommunications.com</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+     <mj-section background-color="#e9f5f3" background-repeat="repeat" padding="0px">
+      <mj-column width="100%">
+        <mj-divider border-color="#9bd4ca" border-width="1px" border-style="solid" padding-left="0" padding-right="0" padding-bottom="0px" padding-top="0"></mj-divider>
+      </mj-column>
+    </mj-section>
+     <mj-section background-color="#e9f5f3" background-repeat="repeat" padding="0px">
+      <mj-column width="100%">
+        <mj-text align="center" color="#242828" font-size="14px" font-family="OpenSans, Arial, sans-serif" padding-left="0px" padding-right="25px" padding-bottom="28px" padding-top="20px">
+          <span style="font-size:14px; display:block; color:#242828;">© 2022 ClemenTel. All Rights Reserved. </span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

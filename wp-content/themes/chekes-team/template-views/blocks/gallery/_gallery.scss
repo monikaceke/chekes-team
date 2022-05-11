@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+## profile-gallery
+--------------------------------------------------------------*/
+.profile-gallery {
+	padding: 150px 0;
+	position: relative;
+
+	@include mq(1800px) {
+		padding: 100px 0;
+	}
+
+	@include mq($lap-large) {
+		padding: 80px 0;
+	}
+
+	@include mq($xl) {
+		padding: 60px 0;
+	}
+
+	@include mq($lg) {
+		padding: 40px 0;
+	}
+}
+
+.profile-gallery__inner {
+	position: relative;
+	margin-bottom: 30px;
+
+	@include mq($lg) {
+		margin-bottom: 20px;
+	}
+
+	img {
+		display: flex;
+		object-fit: cover;
+		height: 100%;
+	}
+}

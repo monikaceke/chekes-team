@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------
+## banner-text
+--------------------------------------------------------------*/
+.banner-text {
+	padding: 37px 0 32px;
+
+	@include mq($xl) {
+		padding: 30px 0;
+	}
+
+	@include mq($lg) {
+		padding: 20px 0 30px;
+	}
+}
+
+.banner-text__wrapper {
+	border-radius: 40px;
+	padding: 20px 48px 40px;
+	background-color: $carnation;
+
+	@include mq($xl) {
+		padding: 40px 30px;
+	}
+
+	@include mq($lg) {
+		padding: 40px 20px;
+	}
+}
+
+.banner-text__title {
+	margin-bottom: 60px;
+
+	@include mq($xl) {
+		margin-bottom: 40px;
+	}
+
+	@include mq($lg) {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+}
+
+.banner-text__image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 350px;
+	margin: auto;
+	height: 100%;
+
+	@include mq($lg) {
+		margin: 0 auto 20px;
+	}
+
+	@include mq($sm) {
+		max-width: 200px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.banner-text__content {
+	padding: 40px 15px;
+
+	@include mq($lg) {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

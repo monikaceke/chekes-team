@@ -1,0 +1,168 @@
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 1001;
+	transition: $dur / 2 $ease;
+	will-change: transform;
+
+	&.is-sticky {
+		height: 60px;
+		transition: $dur $ease;
+	}
+
+	&.site-header--scroll {
+		.site-header__container {
+			background-color: $sinbad;
+			box-shadow: 0 0 10px -3px $black;
+			height: 100px;
+			
+			@include mq($xl) {
+				height: 90px;
+			}
+
+			
+			@include mq($lg) {
+				height: 80px;
+			}
+		}
+
+		.site-header__logo {
+			transform: scale(0.8);
+			transform-origin: left;
+		}
+	}
+}
+
+.site-header__wrepper {
+	max-width: 100% !important;//sass-lint:disable-line no-important
+	padding: 0;
+}
+
+.site-header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: transparent;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 140px;
+	padding: 0 47px;
+	border-radius:  0 0 40px 40px;
+	transition: $dur $ease;
+
+	@include mq($xl) {
+		height: 90px;
+		padding: 0 40px;
+	}
+
+	@include mq($lg) {
+		height: 80px;
+		padding: 0 20px;
+	}
+}
+
+.site-header__branding {
+	display: flex;
+	align-items: center;
+}
+
+.site-header__logo {
+	color: $white;
+	display: block;
+	max-width: 236px;
+	transition: $dur $ease;
+}
+
+.site-header__logo-img {
+	display: block;
+	width: 100%;
+}
+
+.site-header__nav-outer {
+	@include mq($xl) {
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		z-index: 1010;
+		visibility: hidden;
+		transition: $dur $ease $dur;
+		will-change: transform;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($white, .5);
+			opacity: 0;
+			visibility: hidden;
+			transition: $dur $ease;
+		}
+
+		&.is-active {
+			visibility: visible;
+			transition: $dur $ease;
+		
+			&::before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.site-header__nav-inner {
+	@include mq($xl) {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 300px;
+		height: 100%;
+		background-color: $white;
+		display: block;
+		padding: 100px 30px;
+		transform: translateX(100%);
+		transition: $dur $ease;
+		border-radius: 20px 0 0 20px;
+
+		.is-active & {
+			transform: translateX(0);
+		}
+	}
+}
+
+.site-header__hamburger {
+	display: none;
+	transition: $dur $ease;
+
+	&.is-active {
+		right: 15px;
+	}
+
+	@include mq($xl) {
+		display: block;
+		right: 40px;
+		@include center(y);
+		z-index: 1100;
+	}
+
+	@include mq($lg) {
+		right: 30px;
+	}
+}

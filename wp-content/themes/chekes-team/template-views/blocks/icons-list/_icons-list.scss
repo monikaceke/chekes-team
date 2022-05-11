@@ -1,0 +1,190 @@
+/*--------------------------------------------------------------
+## icons-list
+--------------------------------------------------------------*/
+.icons-list {
+	padding: 100px 0;
+	background-color: transparent;
+	position: relative;
+	z-index: 3;
+
+	@include mq(1500px) {
+		padding: 80px 0;
+	}
+
+	@include mq($lap-large) {
+		padding: 60px 0;
+	}
+
+	@include mq($xl) {
+		padding: 40px 0;
+	}
+
+	@include mq($sm) {
+		padding: 20px 0;
+	}
+}
+
+.icons-list__contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 -10px;
+
+	@include mq($xl) {
+		margin: 0 -5px;
+	}
+
+	@include mq($md) {
+		justify-content: center;
+	}
+}
+
+.icons-list__contact-link {
+	border: 1px solid $sinbad;
+	border-radius: 100px;
+	padding: 15px 40px 15px 25px;
+	display: flex;
+	align-items: center;
+	transition: $dur $ease;
+	color: $outer-space;
+	margin: 0 10px;
+	overflow: hidden;
+	position: relative;
+	max-width: 255px;
+	width: 100%;
+
+	&::before {
+		content: '';
+		width: 0;
+		height: 101%;
+		position: absolute;
+		left: -1px;
+		top: -1px;
+		right: -1px;
+		bottom: -1px;
+		opacity: 0;
+		transition: $dur $ease;
+		border-radius: 100px;
+		background-color: $carnation;
+	}
+	
+	@include hover {
+		border: 1px solid $carnation;
+
+		&::before {
+			width: 101%;
+			opacity: 1;
+		}
+
+		.icons-list__contact-link-name {
+			color: $white;
+		}
+
+		.icons-list__contact-link-icon {
+			color: $white;
+			background-color: $carnation;
+			perspective: 1000px;
+			animation-name: shake;
+			animation-duration: 0.8s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			transform-origin: 50% 100%;
+		}
+	}
+
+	@include mq($lap-large) {
+		padding: 20px 30px 20px 20px;
+	}
+
+	@include mq($xl) {
+		margin: 0 5px;
+		padding: 15px 20px;
+	}
+
+	@include mq($md) {
+		padding: 10px;
+	}
+
+	@include mq($sm) {
+		max-width: 62px;
+		margin: 0 15px;
+	}
+}
+
+.icons-list__contact-link-icon {
+	font-size: 24px;
+	color: $carnation;
+	border-radius: 100%;
+	background-color: $white;
+	padding: 5px;
+	height: 59px;
+	width: 59px;
+	min-width: 59px;
+	display: block;
+	position: relative;
+	transition: $dur $ease;
+	pointer-events: none;
+	z-index: 3;
+	margin-right: 10px;
+
+	@include mq($xl) {
+		height: 40px;
+		width: 40px;
+		min-width: 40px;
+		margin-right: 15px;
+		font-size: 18px;
+	}
+
+	@include mq($md) {
+		margin-right: 0;
+	}
+	
+	.icons-list-contact-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 24px;
+		font-size: 20px;
+		transform: translate(-50%, -50%);
+
+		@include mq($xl) {
+			height: 18px;
+			font-size: 18px;
+		}
+
+		svg {
+			height: 25px;
+
+			@include mq($xl) {
+				height: 18px;
+			}
+		}
+	}
+}
+
+.icons-list__contact-link-name {
+	color: $black;
+	font-family: $font-main;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 500;
+	transition: $dur $ease;
+	pointer-events: none;
+	z-index: 3;
+	position: relative;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+	@include mq($xl) {
+		font-size: 16px;
+	}
+
+	@include mq($md) {
+		font-size: 14px;
+	}
+
+	@include mq($sm) {
+		display: none;
+	}
+}
