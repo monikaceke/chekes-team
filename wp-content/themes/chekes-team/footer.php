@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content -->
-	
+
 	<footer id="colophon" class="site-footer">
 		<div class="popup-form">
 			<div class="popup-form-overlay js-close-form"></div>
@@ -27,7 +27,7 @@
 						</div>
 						<span class="cf7-holder__popup-title">Message is sent!</span>
 					</div>
-					<?php echo do_shortcode('[contact-form-7 id="20" title="Popup form"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="22" title="Popup form"]'); ?>
 				</div>
 			</div>
 		</div>
