@@ -3,27 +3,6 @@
     "title": "FC Banner",
     "fields": [
         {
-            "key": "field_5fe07daa112f1",
-            "label": "SVG Icon",
-            "name": "svg_icon",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "group_5fe0934e57e5a"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
-        },
-        {
             "key": "field_5d70eb5909ca5",
             "label": "Title",
             "name": "title",
@@ -44,66 +23,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_5d70eb5e09ca6",
-            "label": "Subtitle",
-            "name": "subtitle",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "show_in_graphql": 1,
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5d726b1802d42",
-            "label": "Button",
-            "name": "button",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "show_in_graphql": 1,
-            "return_format": "array"
-        },
-        {
-            "key": "field_5f08827a2744f",
-            "label": "Scroll To",
-            "name": "scroll_to",
-            "type": "text",
-            "instructions": "Add section ID. Example: #some-id-name",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "show_in_graphql": 1,
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f1012c9e9239",
-            "label": "Background Image",
-            "name": "background_image",
-            "type": "clone",
+            "key": "field_628117a447b3c",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -112,13 +35,65 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "group_5d70ef8b520e1"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_628117cc47b3d",
+            "label": "Shop Link",
+            "name": "shop_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_628117dd47b3e",
+            "label": "Call Us Link",
+            "name": "call_us_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62811b5f87e98",
+            "label": "Banner Image",
+            "name": "banner_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -138,7 +113,8 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1627053987,
+    "show_in_rest": 0,
+    "modified": 1652628345,
     "acf-field-group-category": [
         {
             "slug": "flexible-content",
