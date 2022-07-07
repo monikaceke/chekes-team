@@ -30,6 +30,8 @@ acf-flexible-content: # DEFINE ACF FLEXIBLE CONTENT GROUPS AND FIELDS
         layouts: # set flex content layouts/blocks that will show for this group
             - title: "Banner"
               group_id: "group_5d70e7dfa2562"
+            - title: "Icons List"
+              group_id: "group_62c726e078d30"
             - title: "Basic Block"
               group_id: "group_5d70e7ea08bce"
             - title: "Slider"

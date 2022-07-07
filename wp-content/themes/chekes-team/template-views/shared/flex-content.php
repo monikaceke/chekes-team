@@ -7,6 +7,9 @@ if ( $flexible_content ) {
 			case 'banner':
 				fws()->render()->templateView( $fc, 'banner' );
 				break;
+			case 'icons_list':
+				fws()->render()->templateView( $fc, 'icons-list' );
+				break;
 			case 'slider':
 				fws()->render()->templateView( $fc, 'slider' );
 				break;
