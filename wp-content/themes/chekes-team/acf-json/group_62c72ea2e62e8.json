@@ -1,0 +1,128 @@
+{
+    "key": "group_62c72ea2e62e8",
+    "title": "FC Info Block",
+    "fields": [
+        {
+            "key": "field_62c72eacb038a",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "Enter the title.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62c72f5a636b1",
+            "label": "Content",
+            "name": "content",
+            "type": "textarea",
+            "instructions": "Enter the content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62c7307e429e2",
+            "label": "Emails",
+            "name": "emails",
+            "type": "repeater",
+            "instructions": "Add emails.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62c7309f429e3",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "instructions": "Enter the text of the email.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62c730c1429e4",
+                    "label": "Url",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "Enter the URL of the email.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1657221434,
+    "acf-field-group-category": [
+        {
+            "slug": "flexible-content",
+            "name": "Flexible Content"
+        }
+    ]
+}

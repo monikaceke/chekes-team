@@ -10,6 +10,9 @@ if ( $flexible_content ) {
 			case 'icons_list':
 				fws()->render()->templateView( $fc, 'icons-list' );
 				break;
+			case 'info_block':
+				fws()->render()->templateView( $fc, 'info-block' );
+				break;
 			case 'slider':
 				fws()->render()->templateView( $fc, 'slider' );
 				break;
